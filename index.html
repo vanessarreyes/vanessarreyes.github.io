@@ -7,21 +7,36 @@
     <title>About Me</title>
     <!--link to stylesheet css-->
     <link rel="stylesheet" href="mypage_bootstrap.css">
+    <script src="manage-cards.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark">
-      <ul class="navbar-nav">
-          <li class="nav-item" style="color:white">
-            <a class="nav-link text-white" href="mypage_bootstrap.html">Home</a>
-          </li>
-          <li>
-            <a class="nav-link text-white" href="mypage.html">MyPage</a>
-        </li>
-          <li>
-            <a class="nav-link text-white" href="form.html">Form Page</a>
-          </li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="home.html">
+		<img class="rounded-circle" src="cu_boulder_logo.jpg" alt="" width="30" height="30">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="mypage_bootstrap.html">Profile</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="login.html">Sign Up Modal<span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="tic-tac-toe.html">Tic Tac Toe Game</a>
+		  </li>
+          <li class="nav-item">
+			<a class="nav-link" href="mypage.html">My Page (OG Profile Page)<span class="sr-only">(current)</span></a>
+		  </li>
+          <li class="nav-item">
+			<a class="nav-link" href="form.html">Form Page<span class="sr-only">(current)</span></a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
 
     <br>
     <div>
@@ -85,29 +100,35 @@
 
     <div class="row">
       <div class="col-sm-4">
-        <div class="card" style="width: 25rem">
+        <div class="card" style="width: 25rem" id="interest1">
           <img class="card-img-top" src="https://imgix.bustle.com/uploads/image/2019/12/12/ed336be3-2ce1-4f50-9f73-967b0c9bd6d7-gettyimages-1129878609.jpg?w=1020&h=576&fit=crop&crop=faces&auto=format&q=70" alt="Video Game Controller">
           <div class="card-body">
             <h5 class="card-title">Video Games</h5>
+            <button type="button" class="btn btn-primary btn-circle btn-sm" style="background-color: #1e68d6" onclick="addCard1()">+</button>
           </div>
         </div>
       </div>
     <div class="col-sm-4">
-      <div class="card" style="width: 25rem">
+      <div class="card" style="width: 25rem" id="interest2">
         <img class="card-img-top" src="https://i.ytimg.com/vi/UGuxU--4jPA/maxresdefault.jpg" alt="Hand Painting">
         <div class="card-body">
           <h5 class="card-title">Drawing & Painting</h5>
+          <button type="button" class="btn btn-primary btn-circle btn-sm" style="background-color: #1e68d6" onclick="addCard2()">+</button>
         </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="card" style="width: 25rem">
+      <div class="card" style="width: 25rem" id="interest3">
         <img class="card-img-top" src="https://d279m997dpfwgl.cloudfront.net/wp/2018/06/0612_netflix-1000x667.jpg" alt="Person Waching TV">
         <div class="card-body">
           <h5 class="card-title">Watching Movies & TV Shows</h5>
+          <button type="button" class="btn btn-primary btn-circle btn-sm" style="background-color: #1e68d6;" onclick="addCard3()">+</button>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
