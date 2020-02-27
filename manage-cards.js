@@ -8,7 +8,7 @@ function addCard1() {
   // create card to hold tweet
   var tweet = $('<div class="card" style="width: 25rem"> <div> <button type="button" class="btn btn-primary btn-circle btn-sm float-right" style="background-color:red;">-</button> </div> <img class="card-img-top" src="twitter_red.jpg" alt="Twitter Logo"> <div class="card-body"> <h5 class="card-title">Tweet</h5> <p class="card-text text-center">Sample tweet will go here</p> </div> </div>');
   // varaible to hold card_id
-  var card_id = "card_" + interest1_count;
+  var card_id = "card1_" + interest1_count;
   // add attribute of id to tweet
   tweet.attr("id", card_id);
   // append the new tweet to div with interes1 id
@@ -38,7 +38,7 @@ function addCard2() {
   // create card to hold tweet
   var tweet = $('<div class="card" style="width: 25rem"> <div> <button type="button" class="btn btn-primary btn-circle btn-sm float-right" style="background-color:red;">-</button> </div> <img class="card-img-top" src="twitter_red.jpg" alt="Twitter Logo"> <div class="card-body"> <h5 class="card-title">Tweet</h5> <p class="card-text text-center">Sample tweet will go here</p> </div> </div>');
   // varaible to hold card_id
-  var card_id = "card_" + interest2_count;
+  var card_id = "card2_" + interest2_count;
   // add attribute of id to tweet
   tweet.attr("id", card_id);
   // append the new tweet to div with interes1 id
@@ -69,7 +69,7 @@ function addCard3() {
   // create card to hold tweet
   var tweet = $('<div class="card" style="width: 25rem"> <div> <button type="button" class="btn btn-primary btn-circle btn-sm float-right" style="background-color:red;">-</button> </div> <img class="card-img-top" src="twitter_red.jpg" alt="Twitter Logo"> <div class="card-body"> <h5 class="card-title">Tweet</h5> <p class="card-text text-center">Sample tweet will go here</p> </div> </div>');
   // varaible to hold card_id
-  var card_id = "card_" + interest3_count;
+  var card_id = "card3_" + interest3_count;
   // add attribute of id to tweet
   tweet.attr("id", card_id);
   // append the new tweet to div with interes1 id
